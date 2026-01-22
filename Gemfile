@@ -48,6 +48,11 @@ gem "mysql2", "~> 0.5"
   gem "debug", platforms: %i[ mri windows ]
 end
 
+roup :development do
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "web-console"
+end
+
 group :production do
   gem 'pg'
 end
